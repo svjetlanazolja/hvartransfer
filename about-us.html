@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hvartransfer</title>
+    <title>About us</title>
+    <link type="text/css" rel="stylesheet" href="js/lightgallery.js-master/dist/css/lightgallery.min.css" /> 
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="page-home">
+<body class="page-about">
     <header>
         <div class="logoandnavigation">
             <a href="index.html" title="Hvartransfer home page" class="site-logo">HVARTRANSFER</a>
@@ -16,15 +17,15 @@
                 <a href="our-services.html" title="our services page">Our services</a>
                 <a href="taxi-hvar-prices.html" title="Taxi Hvar prices page">Taxi Hvar Prices</a>
                 <a href="sensen-resort-prices.html" title="Sense resort prices page">Sense resort prices</a>
-                <a href="contact-us.html" title="Contact us page">Contact us</a>      
+                <a href="contact-us.html" title="Contact us page">Contact us</a>
             </nav>
-            <p class="phone-number">+ 385 (0) 91 534 0538</p>    
+            <p class="phone-number">+ 385 (0) 91 534 0538</p>  
             </div>     
-        <div class="reservation">
+        <div class="reservation" >
             <form class="reservation-form">
             <h2>BOOK A RIDE</h2>
             <label for="date-of-ride">Date of ride</label>
-            <input type="date" name="trip-start" class="input-element">  
+            <input type="date" name="trip-start" class="input-element">
             <label for="location-from">From</label>
             <select class="input-element">
                 <option value="1">Stari Grad</option>
@@ -58,32 +59,61 @@
                 </select>
             <label for="phone-number">Phone number</label>
             <input type="tel" id="phone" name="phone"
-            placeholder="+000 00 000 000" class="input-element">              
+            placeholder="+000 00 000 000" class="input-element">  
             <input type="button" value="BOOK" class="button">   
             </form>
         </div>
     </header>
     <main>
-            <h1 class="headline">NEED A TAXI RIDE ON THE ISLAND OF HVAR?</h1>
-            <div class="main-text">
+        <h1 class="headline">ABOUT HVAR TAXI SERVICE – HVARTRANSFER</h1>
+        <div class="main-text">
+            <p>HvarTransfer offers an optimal Hvar taxi service with air-conditioned Shuttle 1 to 8 pasangers.
+            We reach every island of Hvar destination: town Hvar, Stari Grad, Jelsa, Vrboska, Ivan Dolac, Zavala, Sucuraj safely and in the shortest time.
+            We will take care about your wishes and demands in order to offer you a comfortable journey.</p>
+            <p>Save holiday time & money by planning ahead and booking your private transfers and other taxi services arrangement on the Island of Hvar now!  </p>
+            <h4>WHO CHOOSE US?</h4>
+            <P><b>Convenience - Hvar taxi</b> - a door to door - from feryy, hotel, accommodation - transfer services 24/7.</p>
+            <p><b>Speed - Taxi Hvar</b> - our service is the fastes way to arrive at your destination on the island of Hvar.</p>
+            <p><b>Comfort</b> - enjoy privacy in new Shuttle 8+1, clean and spacious air-conditioned vehicle.</p>
+            <p><b>Affordability</b> - our Hvat taxi prices are fixed, fully inclusive and the best on the island of Hvar and you do not need to weit in line for a taxi or ask for pablic transportation.</p>
             <ul class="dashed-list">
-                <li>Hvar Taxi - Shuttle 8 + 1</li>
-                <li>Taxi Hvar services 0 - 24h</li>
-                <li>Tours around the island of Hvar</li>
-                <li>Island wine tasting</li>
-                <li>Visit to the island's rural households and taverns</li>
-                <li>Private excursions: Dubrovnik, Međugorje... </li>
+                <li>Shuttle max 8 passenger</li>
+                <li>Air conditioning system</li>
+                <li>ABS and airbag</li>
+                <li>Capacity of bunker is 4 cubic m</li>
+                <li>Car radio with cd</li>
+                <li>Navigation system</li>
+                <li>Children chairs at request</li>
             </ul>
-            <p>If you arrive in the Island of Hvar by ferry and You need taxi transportation from the ferry port in Stari Grad, Jelsa or Hvar town to your accommodation or hotel, 
-            or You stay on the island Hvar and You want to go into the city, restaurant, disco, bar or any other place, feel free to call as - hvartransfer hvar taxi company.</p>
-            <p>We will be happy to pick you up, wait and return you to your accommodation or ferry.</p>
+              </div>              
+        <div class="img-services" id="lightgallery">
+        <a href="images/img/1.jpg">
+            <img src="images/img/1s.jpg">
+        </a>        
+        <a href="images/img/2.jpg">
+            <img src="images/img/2s.jpg">
+        </a> 
+        <a href="images/img/3.jpg">
+            <img src="images/img/3s.jpg">
+        </a> 
+        <a href="images/img/4.jpg">
+            <img src="images/img/4s.jpg">
+        </a> 
+        <a href="images/img/5.jpg">
+            <img src="images/img/5s.jpg">
+        </a> 
+        <a href="images/img/6.jpg">
+            <img src="images/img/6s.jpg">
+        </a>            
         </div>
-        <div class="dashed3">
-            <img src="images/img/001.jpg" class="img-home">
-        </div>   
     </main>
     <footer>
         <p>+ 385 (0) 91 534 0538</p>
     </footer>
+
+    <script src="js/lightgallery.js-master/dist/js/lightgallery.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery')); 
+    </script>
 </body>
 </html>

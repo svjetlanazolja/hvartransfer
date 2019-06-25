@@ -1,0 +1,462 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: sans-serif;
+    color: #0A275A; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px; 
+}
+
+header {
+    grid-column: 1 / -1; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logoandnavigation {
+    display: flex; 
+    background-color: #FFE431; 
+    padding-top: 20px; 
+    padding-bottom: 30px; 
+    flex-direction: column; 
+}
+
+.phone-number {
+    color: black; 
+    margin-top: auto; 
+    text-align: center; 
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+.site-logo {
+    grid-column: 1 / 2;  
+    color: black; 
+    font-weight: bold; 
+    text-decoration: none; 
+    font-size: 30px; 
+    background-image: url(images/logo-bg.png); 
+    padding-bottom: 45px; 
+    background-repeat: repeat-x; 
+    background-position-y: bottom; 
+    display: block; 
+}
+
+.site-nav {
+    display: grid;     
+    margin-top: 20px;
+}    
+
+.site-nav a {
+    text-decoration: none; 
+    text-transform: uppercase;
+    color: black; 
+    padding: 10px 20px;
+}
+
+.reservation {
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 2 / 6;  
+    background-image: url("images/truck.svg"); 
+    background-position-x: -150px; 
+    background-position-y: center; 
+    background-repeat: no-repeat; 
+    padding: 20px 20px 0 20px;  
+}
+
+.reservation-form {
+    width: 350px; 
+}
+
+.book-date {
+    background-color: #FFE431; 
+    border: none; 
+    width: 100%;
+    padding: 10px; 
+    font-family: sans-serif;
+}
+
+.button {
+    background-color: #3EFFBD; 
+    border: none; 
+    color: white; 
+    width: 150px;
+    padding: 6px; 
+    font-weight: bold;
+    font-size: 1rem; 
+}
+
+.headline {
+    grid-column: 2 / 5; 
+    margin-bottom: 20px; 
+}
+
+.page-home .dashed3 {
+    grid-column: 4 / -1;
+    display: block; 
+    height: auto;
+}
+
+ul.dashed-list {
+    list-style-type: none; 
+}
+
+.dashed-list li:last-child {
+    margin-bottom: 30px; 
+}
+
+ul.dashed-list > li:before { 
+    content: "- "; 
+    display: inline-block; 
+    color: black; 
+    list-style-type: none;
+}
+
+.dashed3 {
+    grid-column: 4 / -1; 
+    display: flex; 
+    height: 100%; 
+    margin-right: 20px; 
+}
+
+ul.dasher2 {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    list-style-position: inside; 
+}
+
+.aside-list {
+    align-self: stretch;    
+    list-style-type: none;
+    background-color: #FFE431;
+    margin: 0 0 0 -10px;
+    padding: 40px; 
+}
+
+.page-services .aside-list {
+    margin-left: 0; 
+}
+
+.page-services .dashed3 {
+    grid-column: 4 / -1;
+    display: block; 
+    height: auto;
+}
+
+ul.aside-list > li:before {
+    display: inline-block;
+    width: 1em; 
+    height: 1em;
+    background-color: white; 
+    content: ""; 
+    margin-right: 10px; 
+    margin-left: -27px; 
+  }
+
+.aside-list li {
+    margin-bottom: 30px; 
+    padding-left: 27px; 
+}
+
+.aside-list li:last-child {
+    margin-bottom: 0; 
+}
+
+main {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1 / -1; 
+    grid-gap: 10px; 
+    align-items: start; 
+}
+
+.main-text {
+    grid-column: 2 / 4;  
+}
+
+.main-text1 {
+    grid-column: 2 / 5; 
+    margin-top: 10px;
+}
+
+.main-text p {
+    grid-column: 2 / 4; 
+    margin-bottom: 30px; 
+}
+
+.main-text p:last-child {
+    margin-bottom: 0; 
+}
+
+.main-text h4 {
+    margin-bottom: 30px; 
+}
+
+.img-home {
+    width: 100%; 
+}
+
+.img-services {
+    grid-column: 4 / 6; 
+    grid-gap: 10px; 
+    grid-template-columns: 1fr 1fr; 
+    display: grid; 
+    margin-right: 10px; 
+}
+
+.img-services img {
+    width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #F3F1F1;  
+}
+
+.resort-prices thead th:nth-child(1) {
+        width: 20%;
+}
+
+.resort-prices thead th:nth-child(2) {
+        width: 40%;
+}
+    
+.resort-prices thead th:nth-child(3) {
+        width: 20%;
+}
+    
+.resort-prices thead th:nth-child(4) {
+        width: 20%;
+}
+    
+.resort-prices tbody tr td:nth-child(3), 
+.resort-prices tbody tr td:nth-child(4) {
+        text-align: right; 
+        background-color: #FFE431; 
+}
+
+.resort-prices thead tr th:nth-child(3), 
+.resort-prices thead tr th:nth-child(4) {
+        text-align: right; 
+        background-color: #FFE431; 
+}
+    
+.resort-prices thead tr th:nth-child(1), 
+.resort-prices thead tr th:nth-child(2) {
+        text-align: left; 
+}
+
+thead tr th {
+    border-bottom: 1px solid white; 
+}
+
+table tr th, table tr td {
+    padding: 5px 10px; 
+}
+ 
+.hvar-prices tbody tr td:nth-child(2) 
+{
+    text-align: right; 
+    background-color: #FFE431; 
+}
+
+.hvar-prices thead tr th:nth-child(2)  {
+    text-align: right; 
+    background-color: #FFE431; 
+}
+
+.hvar-prices thead tr th:nth-child(1) {
+    text-align: left; 
+}
+
+.input-element {
+    background-color: #F3F1F1;
+    border: none;
+    width: 100%; 
+    padding: 10px; 
+    color: #174C7E;  
+    font-size: 20px; 
+    font-family: sans-serif; 
+    margin-bottom: 10px; 
+}
+
+.reservation-form .input-element {
+    background-color: #FFE431; 
+}
+
+.reservation-form label {
+    color: black;
+}
+
+.reservation-form h2 {
+    color:black; 
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    grid-column: 4 / -1; 
+    margin-right: 20px; 
+}
+
+label {
+    font-size: 20px; 
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;  
+    background-color: #3EFFBD; 
+    width: 250px; 
+}
+
+::placeholder { 
+    color: #174C7E;
+    opacity: 1; 
+  }
+
+footer {
+    grid-column: 2 / 4;
+    border: .5px solid #FFE431;
+    background:  #FFE431;
+    color: #0A275A; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    font-size: 20px; 
+}
+
+
+@media (max-width: 640px) {
+    .headline {
+        font-size: 25px;
+        grid-column: 1 / -1;
+        text-align: center;  
+    }
+    
+   body {
+    grid-template-columns: 1fr; 
+    grid-column: 1 / -1; 
+   }
+
+   header {
+    grid-template-columns: 1fr; 
+    grid-column: 1 / -1; 
+   }
+
+   .reservation {
+    grid-column: 1 / -1; 
+    justify-content: unset; 
+    background-image: none; 
+   }
+
+   .reservation-form {
+       width: auto; 
+   }
+
+   .headline {
+       grid-column: 1 / -1; 
+       text-align: center; 
+   }
+
+   main {
+    grid-template-columns: 1fr; 
+    grid-column: 1 / -1; 
+   }
+
+   .main-text {
+    grid-template-columns: 1fr; 
+    grid-column: 1 / -1; 
+    padding: 20px; 
+    padding-top: 0; 
+   }
+
+   .main-text1 {
+    grid-template-columns: 1fr; 
+    grid-column: 1 / -1; 
+    padding: 20px; 
+    padding-top: 0; 
+   }
+
+   .img-services {
+    grid-template-columns: 1fr; 
+    grid-column: 1 / -1; 
+    padding: 20px; 
+    margin-right: 0; 
+    margin-top: 0; 
+   }
+
+   ul.aside-list {
+   margin: 0;
+   }
+
+   .dashed3 {
+       grid-column: 1 / -1; 
+       margin: 20px; 
+       height: auto;
+   }
+
+    .page-services .dashed3 {
+        grid-template-columns: 1fr; 
+        grid-column: 1 / -1; 
+        margin: 20px; 
+    }
+
+    .page-home .dashed3 {
+        grid-template-columns: 1fr; 
+        grid-column: 1 / -1; 
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr; 
+        grid-column: 1 / -1; 
+        margin: 20px;  
+        margin-top: 0; 
+    }
+
+    footer {
+        grid-template-columns: 1fr; 
+        grid-column: 1 / -1; 
+    }
+   }
+
+
+@media (min-width: 641px) and (max-width: 920px) {
+    .headline {
+        font-size: 25px;
+        grid-column: 1 / -1;
+        text-align: center;  
+    }
+
+    .main-text {
+        grid-column: 1 / 4; 
+        margin-left: 10px; 
+    }
+
+    .resort-prices {
+        grid-column: 1 / -1; 
+        margin-left: 10px; 
+        margin-right: 10px; 
+    }
+
+    .img-services {
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+    footer {
+        grid-column: 1 / 4; 
+    }
+    }
