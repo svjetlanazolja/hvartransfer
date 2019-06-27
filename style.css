@@ -75,8 +75,9 @@ header {
     background-position-y: center; 
     background-repeat: no-repeat; 
     padding: 20px 20px 0 20px;  
-    -webkit-appearance: none;
 }
+
+
 
 .reservation-form {
     width: 350px; 
@@ -293,6 +294,11 @@ table tr th, table tr td {
     font-size: 20px; 
     font-family: sans-serif; 
     margin-bottom: 10px; 
+    display: block; 
+}
+
+select.input-element {
+    -webkit-appearance: none;
 }
 
 .reservation-form .input-element {
