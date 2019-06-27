@@ -296,6 +296,7 @@ table tr th, table tr td {
     margin-bottom: 10px; 
     display: block;  
     -webkit-appearance: none;
+    min-height: 50px; 
 }
 
 .reservation-form .input-element {
