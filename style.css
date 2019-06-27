@@ -294,10 +294,7 @@ table tr th, table tr td {
     font-size: 20px; 
     font-family: sans-serif; 
     margin-bottom: 10px; 
-    display: block; 
-}
-
-select.input-element {
+    display: block;  
     -webkit-appearance: none;
 }
 
